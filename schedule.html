@@ -5,122 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活動予定 | 埼玉県立大学 和装部和の美</title>
-    <meta name="description" content="埼玉県立大学和装部和の美の活動予定。次回・直近の月1回の活動日と内容をご案内します。">
+    <meta name="description" content="埼玉県立大学和装部和の美の今後の活動予定・スケジュールをお知らせします。">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">和装部和の美</a>
-
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <!-- ナビゲーション -->
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">ホーム</a></li>
-                    <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                    <li><a href="shinkan.html">新歓・体験会</a></li>
                     <li><a href="about.html">活動紹介</a></li>
                     <li><a href="schedule.html">活動予定</a></li>
                     <li><a href="report.html">活動報告</a></li>
-                    <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="cost.html">費用・ルール</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- ページヘッダー -->
-    <div style="background-color: var(--primary-color); color: white; padding: 3rem 1rem; text-align: center;">
-        <h1 style="color: white; margin: 0;">活動予定</h1>
-    </div>
+    <div style="padding-top: 100px;"></div>
 
-    <main class="container" style="padding: 4rem 0;">
-
-        <div class="mb-4 text-center">
-            <div style="max-width: 800px; margin: 0 auto;">
-                <p>次回のサークル活動（通常：月1回ペース）をご案内します。<br>
-                    在学生の見学や体験参加も随時歓迎しています！</p>
-            </div>
-        </div>
-
-        <!-- 直近の予定ブロック -->
-        <div
-            style="max-width: 600px; margin: 0 auto; background: var(--bg-light); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid var(--primary-color);">
-
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <span
-                    style="background-color: var(--secondary-color); color: white; padding: 0.3rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">次回の活動</span>
-            </div>
-
-            <h2
-                style="font-size: 1.6rem; text-align: center; margin-bottom: 1.5rem; margin-top: 0; border: none; padding: 0;">
-                5月の定例活動（着付け基礎）</h2>
-
-            <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
-                <li style="border-bottom: 1px dashed var(--border-color); padding: 1rem 0; display: flex;">
-                    <strong style="width: 100px; color: var(--primary-color);">日時</strong>
-                    <span style="flex: 1;">2026年5月20日(水) 16:30〜18:00</span>
-                </li>
-                <li style="border-bottom: 1px dashed var(--border-color); padding: 1rem 0; display: flex;">
-                    <strong style="width: 100px; color: var(--primary-color);">場所</strong>
-                    <span style="flex: 1;">埼玉県立大学 和室（部室）</span>
-                </li>
-                <li style="border-bottom: 1px dashed var(--border-color); padding: 1rem 0; display: flex;">
-                    <strong style="width: 100px; color: var(--primary-color);">内容</strong>
-                    <span style="flex: 1;">浴衣の基本的な着付け（帯結び中心）と交流会</span>
-                </li>
-                <li style="padding: 1rem 0; display: flex;">
-                    <strong style="width: 100px; color: var(--primary-color);">持ち物</strong>
-                    <span style="flex: 1;">動きやすい服装（必要な道具は部で貸し出します）</span>
-                </li>
-            </ul>
-
-            <!-- 参加ボタン -->
-            <div class="text-center">
-                <p style="font-size: 0.9rem; color: #555; margin-bottom: 1rem;">※ 見学・体験をご希望の方は前日までにご連絡ください。</p>
-                <a href="https://forms.gle/placeholder_taiken" target="_blank" rel="noopener" class="btn btn-primary"
-                    style="width: 100%; max-width: 300px;">見学・体験を申し込む</a>
-            </div>
-        </div>
-
-        <!-- その後の予定があれば（任意表示） -->
-        <div style="max-width: 600px; margin: 4rem auto 0;">
-            <h3
-                style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">
-                その先の予定</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 1rem 0; color: #555; display: flex; align-items: center;">
-                    <span
-                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--secondary-color); border-radius: 50%; margin-right: 15px;"></span>
-                    6月中旬：夏の浴衣お出かけ企画（予定）
-                </li>
-            </ul>
-            <p class="note mt-2">※日程や内容は変更になる場合があります。最新の情報はこちらのページで更新します。</p>
-        </div>
-
-    </main>
-
-    <!-- フッター -->
-    <footer>
+    <section>
         <div class="container text-center">
+            <h1 class="section-title text-center">活動予定</h1>
+            <p style="margin-bottom: 3rem;">通常期の活動は月1回を目安に開催しています。<br>直近1〜2ヶ月の予定を掲載しています。</p>
+
+            <div style="max-width: 600px; margin: 0 auto; text-align: left;">
+                <div
+                    style="background-color: var(--white); border-left: 5px solid var(--accent); padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">2026年5月 着付け基礎</h3>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">日時：5月20日（水）16:30〜18:30
+                    </p>
+                    <p>浴衣の着付けと帯結びのおさらいを行います。後半はお茶会を予定しています。</p>
+                </div>
+
+                <div
+                    style="background-color: var(--white); border-left: 5px solid var(--accent); padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">2026年6月 練り切り体験</h3>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">日時：6月18日（木）16:30〜18:30
+                    </p>
+                    <p>紫陽花をモチーフにした和菓子（練り切り）作りに挑戦します！</p>
+                </div>
+            </div>
+
+            <div class="img-placeholder" style="max-width: 600px; margin: 3rem auto 0; height: 200px;">
+                <p>［写真］カレンダーのイメージ画像 or 活動イメージ</p>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <p>見学をご希望の方は、活動日前日までに見学申込みをお願いいたします。</p>
+                <div class="cta-group">
+                    <a href="placeholder_taiken" class="btn btn-primary" target="_blank">見学・体験を申し込む</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
             <ul class="footer-nav">
                 <li><a href="index.html">ホーム</a></li>
-                <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                <li><a href="shinkan.html">新歓・体験会</a></li>
                 <li><a href="about.html">活動紹介</a></li>
                 <li><a href="schedule.html">活動予定</a></li>
                 <li><a href="report.html">活動報告</a></li>
+                <li><a href="cost.html">費用・ルール</a></li>
                 <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="join.html">入部案内</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
-            <p style="opacity:0.8; font-size:0.9rem;">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
+            <p class="copyright">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
         </div>
     </footer>
 

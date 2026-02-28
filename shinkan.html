@@ -4,108 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新入生歓迎・体験会 | 埼玉県立大学 和装部和の美</title>
-    <meta name="description" content="埼玉県立大学和装部和の美の新歓情報。4月は体験会を毎週開催しています。和装の所作の入口を体験できます。">
+    <title>新歓・体験会 | 埼玉県立大学 和装部和の美</title>
+    <meta name="description" content="4月に開催する新入生歓迎・体験会のご案内。和装の所作や着付けの入口を、見て・やって・相談できる内容です。">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">和装部和の美</a>
-
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <!-- ナビゲーション -->
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">ホーム</a></li>
-                    <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                    <li><a href="shinkan.html">新歓・体験会</a></li>
                     <li><a href="about.html">活動紹介</a></li>
                     <li><a href="schedule.html">活動予定</a></li>
                     <li><a href="report.html">活動報告</a></li>
-                    <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="cost.html">費用・ルール</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- ページヘッダー -->
-    <div style="background-color: var(--primary-color); color: white; padding: 4rem 1rem; text-align: center;">
-        <h1 style="color: white; margin: 0;">新入生歓迎・体験会</h1>
-    </div>
+    <div style="padding-top: 100px;"></div>
 
-    <main class="container" style="padding: 4rem 0;">
-        <div class="text-center mb-4">
-            <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">新入生歓迎の体験会を4月に毎週開催します。<br>
-                和装の所作や着付けの入口を、見て・やって・相談できる内容です。</p>
-        </div>
+    <section>
+        <div class="container">
+            <h1 class="section-title">新入生歓迎・体験会</h1>
+            <p class="lead" style="margin-bottom: 2rem;">新入生歓迎の体験会を4月に毎週開催します。<br>和装の所作や着付けの入口を、見て・やって・相談できる内容です。</p>
 
-        <!-- コンテンツカード群 -->
-        <div class="cards-container mt-4 mb-4">
-
-            <!-- 体験会日程 -->
-            <div class="card" style="max-width: 500px;">
-                <a href="shinkan-schedule.html">
-                    <div class="card-img">日程カレンダーのイメージ</div>
-                    <div class="card-body">
-                        <h3 class="card-title text-center">体験会日程（4月）</h3>
-                        <p>4月は毎週体験会を実施します。曜日は固定ではないので、空いている日にご参加いただけます。<br>（時間：16:30頃〜を予定）</p>
-                        <div class="mt-4 text-center">
-                            <span class="btn btn-outline" style="width:100%; display:block;">日程の詳細を見る</span>
-                        </div>
+            <div class="split-layout">
+                <div class="split-text">
+                    <h2>体験会日程（4月）</h2>
+                    <ul class="cost-table" style="margin-top: 1rem; width: 100%; display: block;">
+                        <li style="display: flex; border-bottom: 1px solid #dcdcdc; padding: 1rem 0;">
+                            <span style="width: 40%; color: var(--primary); font-weight: 500;">第1回</span>
+                            <span>4月X日（○）16:30〜 @部室</span>
+                        </li>
+                        <li style="display: flex; border-bottom: 1px solid #dcdcdc; padding: 1rem 0;">
+                            <span style="width: 40%; color: var(--primary); font-weight: 500;">第2回</span>
+                            <span>4月Y日（△）16:30〜 @部室</span>
+                        </li>
+                        <li style="display: flex; border-bottom: 1px solid #dcdcdc; padding: 1rem 0;">
+                            <span style="width: 40%; color: var(--primary); font-weight: 500;">第3回</span>
+                            <span>4月Z日（□）16:30〜 @部室</span>
+                        </li>
+                        <li style="display: flex; border-bottom: 1px solid #dcdcdc; padding: 1rem 0;">
+                            <span style="width: 40%; color: var(--primary); font-weight: 500;">第4回</span>
+                            <span>4月W日（☆）16:30〜 @部室</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="split-image">
+                    <div class="img-placeholder" style="height: 250px;">
+                        <p>［写真］新歓の様子（体験中の1年生など）</p>
                     </div>
-                </a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- はじめての方向け -->
-            <div class="card" style="max-width: 500px;">
-                <a href="beginner.html">
-                    <div class="card-img">初心者が参加している様子のイメージ</div>
-                    <div class="card-body">
-                        <h3 class="card-title text-center">はじめての方へ</h3>
-                        <p>「着付けが全くできない」「浴衣を持っていない」という方へ。体験会に必要な持ち物や、よくある不安にお答えしています。</p>
-                        <div class="mt-4 text-center">
-                            <span class="btn btn-outline" style="width:100%; display:block;">はじめての方へ</span>
-                        </div>
+    <section>
+        <div class="container">
+            <h2 class="section-title text-center">はじめての方へ</h2>
+            <div class="split-layout reverse">
+                <div class="split-text">
+                    <p>持ち物や特別な準備は必要ありません！<br>
+                        動きやすい服装でお越しください。<br>
+                        浴衣の貸し出しなども部で行いますので、手ぶらで参加できます。</p>
+                    <p style="margin-top: 1rem;">「全く着付けの経験がない…」という方がほとんどですので、安心して見学に来てくださいね。</p>
+
+                    <div class="cta-group" style="justify-content: flex-start; margin-top: 2rem;">
+                        <a href="placeholder_taiken" class="btn btn-primary" target="_blank">見学・体験を申し込む</a>
                     </div>
-                </a>
+                </div>
+                <div class="split-image">
+                    <div class="img-placeholder" style="height: 250px;">
+                        <p>［写真］初心者へのサポート風景</p>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
 
-        <!-- フォームへの導線 -->
-        <div
-            style="background-color: var(--bg-light); padding: 3rem 2rem; border-radius: 8px; text-align: center; margin-top: 4rem;">
-            <h2 style="margin-top: 0;">見学・体験のお申し込み</h2>
-            <p class="mb-4 mt-4">見学・体験はGoogleフォームから受け付けています。<br>送信後、確認でき次第ご連絡します（4月は高頻度で確認します）。</p>
-            <a href="https://forms.gle/placeholder_taiken" target="_blank" rel="noopener" class="btn btn-primary"
-                style="font-size: 1.1rem; padding: 1rem 3rem;">見学・体験フォームを開く</a>
-            <p class="note mt-2">※別タブでGoogleフォームが開きます</p>
-        </div>
-
-    </main>
-
-    <!-- フッター -->
+    <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container">
             <ul class="footer-nav">
                 <li><a href="index.html">ホーム</a></li>
-                <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                <li><a href="shinkan.html">新歓・体験会</a></li>
                 <li><a href="about.html">活動紹介</a></li>
                 <li><a href="schedule.html">活動予定</a></li>
                 <li><a href="report.html">活動報告</a></li>
+                <li><a href="cost.html">費用・ルール</a></li>
                 <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="join.html">入部案内</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
-            <p style="opacity:0.8; font-size:0.9rem;">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
+            <p class="copyright">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
         </div>
     </footer>
 

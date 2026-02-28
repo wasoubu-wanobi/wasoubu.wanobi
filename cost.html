@@ -5,125 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>費用・ルール | 埼玉県立大学 和装部和の美</title>
-    <meta name="description" content="埼玉県立大学和装部和の美の入サー費、年会費などの費用面と、写真撮影に関するルールについてご案内します。">
+    <meta name="description" content="埼玉県立大学和装部和の美の入サー費、年会費、および活動時のルール（写真モザイク方針など）について説明します。">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">和装部和の美</a>
-
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <!-- ナビゲーション -->
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">ホーム</a></li>
-                    <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                    <li><a href="shinkan.html">新歓・体験会</a></li>
                     <li><a href="about.html">活動紹介</a></li>
                     <li><a href="schedule.html">活動予定</a></li>
                     <li><a href="report.html">活動報告</a></li>
-                    <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="cost.html">費用・ルール</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- ページヘッダー -->
-    <div style="background-color: var(--primary-color); color: white; padding: 3rem 1rem; text-align: center;">
-        <h1 style="color: white; margin: 0;">費用・ルール</h1>
-    </div>
+    <div style="padding-top: 100px;"></div>
 
-    <main class="container" style="padding: 4rem 0;">
+    <section>
+        <div class="container">
+            <h1 class="section-title text-center">費用・ルール</h1>
 
-        <div class="mb-4 text-center">
             <div style="max-width: 800px; margin: 0 auto;">
-                <p>和装部でかかる費用と、プライバシーに配慮した写真の取り扱いルールをご案内します。<br>
-                    大学の公認サークルとして、明瞭かつ安全な活動を心がけています。</p>
-            </div>
-        </div>
+                <h2
+                    style="font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1.5rem; border-left: 5px solid var(--primary); padding-left: 1rem;">
+                    費用について</h2>
+                <p style="margin-bottom: 1.5rem;">和装部和の美の活動にかかる費用は以下の通りです。<br>学生のお財布に優しい設定を心がけています。</p>
 
-        <!-- 費用について -->
-        <div style="margin-bottom: 5rem;">
-            <h2 style="text-align: center; margin-bottom: 2rem;">部費・費用について</h2>
+                <table class="cost-table" style="margin-bottom: 3rem;">
+                    <tbody>
+                        <tr>
+                            <th>入サー費</th>
+                            <td>500円（入部時のみ）</td>
+                        </tr>
+                        <tr>
+                            <th>年会費</th>
+                            <td>500円（前期・後期などの集金はありません）</td>
+                        </tr>
+                        <tr>
+                            <th>飲食系の企画</th>
+                            <td>数百円程度の実費を都度カンパ（お茶菓子代など）</td>
+                        </tr>
+                        <tr>
+                            <th>学外のお出かけ</th>
+                            <td>交通費・施設利用料などの実費（自由参加です）</td>
+                        </tr>
+                        <tr>
+                            <th>浴衣・着物</th>
+                            <td>部室のものを貸し出すため、購入の必要はありません。自分のものを使用したい場合はもちろんOKです。</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <div class="mt-4 align-center">
-                <ul class="cost-list" style="max-width: 600px;">
-                    <li>
-                        <span class="cost-label">入サー費</span>
-                        <span style="font-weight: bold; color: var(--primary-color);">500円</span>
-                    </li>
-                    <li>
-                        <span class="cost-label">年会費</span>
-                        <span style="font-weight: bold; color: var(--primary-color);">500円</span>
-                    </li>
-                    <li>
-                        <span class="cost-label">飲食系の企画</span>
-                        <span>実費をカンパ（数百円程度）</span>
-                    </li>
-                    <li>
-                        <span class="cost-label">学外のお出かけ</span>
-                        <span>実費（交通費や施設代など）</span>
-                    </li>
-                </ul>
-            </div>
+                <h2
+                    style="font-size: 1.5rem; margin-top: 4rem; margin-bottom: 1.5rem; border-left: 5px solid var(--primary); padding-left: 1rem;">
+                    活動のルール・写真掲載について</h2>
+                <div style="background-color: var(--bg-sub); padding: 2rem; border-radius: 4px;">
+                    <ul style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 1rem;"><strong>写真のモザイク処理方針</strong><br>
+                            当ホームページや部活動報告で掲載する写真は、プライバシー保護のため、原則として<strong>顔が判別できないようモザイク処理や加工</strong>を行っています。<br>
+                            撮影時には必ず事前に声かけを行い、SNS等への掲載に同意いただいた場合のみ使用いたしますのでご安心ください。</li>
 
-            <div
-                style="max-width: 600px; margin: 2rem auto 0; background: #fff8e1; border-left: 4px solid #ffb300; padding: 1.5rem; text-align: left;">
-                <h3 style="margin-top: 0; font-size: 1.1rem; color: #d84315;">道具の購入について</h3>
-                <p style="margin-bottom: 0;">基本的な着付けや活動に必要な浴衣・帯などの道具は、サークルで共有しているものをお貸し出しします。個人での必須購入品はありません。<br>
-                    （※ご自身で浴衣を購入したい場合の相談には乗ります！）</p>
-            </div>
-        </div>
-
-        <!-- 写真の取扱いルール -->
-        <div>
-            <h2 style="text-align: center; margin-bottom: 2rem;">写真・SNSに関するルール</h2>
-
-            <div class="section-content">
-                <div class="section-image-wrapper">
-                    <div class="section-image"
-                        style="background-color: var(--primary-color); color: white; opacity: 0.8; height: 300px;">
-                        モザイク処理のイメージ画像</div>
+                        <li style="margin-bottom: 1rem;"><strong>出欠・兼サーについて</strong><br>
+                            出欠は自由であり、強制はありません。兼サーやアルバイトとの両立を推奨しています。</li>
+                    </ul>
                 </div>
-                <div class="section-text" style="background: var(--bg-light); padding: 2rem; border-radius: 8px;">
-                    <h3 style="margin-top: 0;">顔の分かる写真のモザイク処理</h3>
-                    <p>和装部では、部員のプライバシーと安全を第一に考えています。<br>
-                        公式ホームページやSNS（InstagramやXなど）、活動報告等で写真を掲載する際は、**「顔が分かる部分」には必ずモザイク処理またはスタンプ等での伏せ込み**を実施します。</p>
-                    <p style="margin-bottom: 0; color: #d84315; font-weight: bold;">
-                        ※このホームページに掲載されている写真も、すべてルールに則って処理を行っています。</p>
+
+                <div class="text-center" style="margin-top: 4rem;">
+                    <p style="margin-bottom: 1rem;">入部にあたって不安な点があれば、お気軽にご質問ください。</p>
+                    <a href="faq.html" class="btn btn-primary">よくある質問（FAQ）を見る</a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- 導線 -->
-        <div style="text-align: center; margin-top: 4rem;">
-            <a href="faq.html" class="btn btn-primary" style="padding: 1rem 2rem;">よくある質問（FAQ）を見る</a>
-        </div>
-
-    </main>
-
-    <!-- フッター -->
+    <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container">
             <ul class="footer-nav">
                 <li><a href="index.html">ホーム</a></li>
-                <li><a href="shinkan.html">新入生歓迎・体験会</a></li>
+                <li><a href="shinkan.html">新歓・体験会</a></li>
                 <li><a href="about.html">活動紹介</a></li>
                 <li><a href="schedule.html">活動予定</a></li>
                 <li><a href="report.html">活動報告</a></li>
+                <li><a href="cost.html">費用・ルール</a></li>
                 <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="join.html">入部案内</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
-            <p style="opacity:0.8; font-size:0.9rem;">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
+            <p class="copyright">&copy; 2026 埼玉県立大学 和装部和の美 大学公認サークル.</p>
         </div>
     </footer>
 
