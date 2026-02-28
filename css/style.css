@@ -57,6 +57,10 @@ h1,
   letter-spacing: 0.08em;
   line-height: 1.2;
   color: var(--primary);
+  border-left: 4px solid var(--primary);
+  /* 藤紫の縦ライン */
+  padding-left: 16px;
+  margin-left: -20px;
 }
 
 /* セクション見出し（和モダン格調） */
@@ -85,11 +89,14 @@ h6 {
 a {
   color: var(--primary);
   text-decoration: none;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
 a:hover {
   opacity: 0.8;
+  border-bottom: 2px solid var(--accent);
+  /* 金色下線 */
 }
 
 img {
@@ -169,6 +176,24 @@ button,
   text-align: center;
 }
 
+.cta-button {
+  /* 新しく依頼された背景色が和金のCTA共通スタイル */
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.cta-button:hover {
+  background-color: #997009;
+  color: var(--white);
+}
+
+/* ボタンのホバー時は通常リンクの下線を無効化 */
+.btn:hover,
+button:hover,
+.cta-button:hover {
+  border-bottom: 1px solid transparent;
+}
+
 .btn-primary {
   background-color: var(--primary);
   color: var(--white);
@@ -240,6 +265,12 @@ header {
   font-weight: 500;
   position: relative;
   padding-bottom: 5px;
+  border-bottom: none;
+  /* remove default link border here */
+}
+
+.nav-links li a:hover {
+  border-bottom: none;
 }
 
 .nav-links li a::after {
@@ -300,25 +331,39 @@ header {
 
 .hero h1 {
   margin-bottom: 2rem;
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: 700;
 }
 
 .hero .catch {
   font-size: 1.5rem;
   color: var(--accent);
   margin-bottom: 2rem;
-  font-family: var(--font-serif);
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: 500;
 }
 
-.hero .lead,
+.hero .lead {
+  font-family: var(--font-body);
+  font-weight: 400;
+  /* Noto Sans JP 400 */
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: var(--text-light);
+}
+
 .caption,
 .note,
 .small-text {
   font-family: var(--font-body);
   font-weight: 300;
+  /* Noto Sans JP 300 */
   font-size: 13px;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
   color: var(--text-light);
 }
 
@@ -431,11 +476,13 @@ header {
   display: block;
   /* As link */
   color: var(--text-main);
+  border-bottom: none;
 }
 
 .report-card:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   opacity: 1;
+  border-bottom: none;
 }
 
 .report-img {
